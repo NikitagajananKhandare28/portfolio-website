@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nikita Khandare — Java &amp; Android Developer</title>
+  <meta name="description" content="Portfolio of Nikita Khandare, a Java and Android developer building full-stack and mobile projects." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="#top" class="logo">NK</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="primaryNav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch to light theme">☾</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <section class="hero wrap" id="hero">
+      <p class="eyebrow">Pune, India · Open to work</p>
+      <h1>Nikita Khandare</h1>
+      <p class="pitch">I build Java and Android applications that hold up outside the classroom — real payments, real databases, real bugs fixed.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#work">See the work</a>
+        <a class="btn btn-ghost" href="#contact">Get in touch</a>
+      </div>
+    </section>
+
+    <section class="about wrap" id="about">
+      <h2>About</h2>
+      <div class="about-grid">
+        <p>I graduated in Computer Engineering from Savitribai Phule Pune University with a 9.55 CGPA, and spent my final year building a full production-style restaurant system rather than a toy project — Firebase backend, real UPI payments, the Android package-visibility bugs included. Two internships and a published paper later, I'm looking for a fresher Java or full-stack role where I can keep building things people actually use.</p>
+        <ul class="about-facts">
+          <li><span>Education</span>B.E. Computer Engineering, SPPU — 9.55 CGPA</li>
+          <li><span>Focus</span>Java Developer, with Android &amp; full-stack range</li>
+          <li><span>Research</span>Published paper, IJARCCE Vol. 15, Issue 5 (2026)</li>
+          <li><span>Experience</span>Internships at TechNova Solutions &amp; Dattakala TRIC</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="skills wrap" id="skills">
+      <h2>Skills</h2>
+      <div class="skills-groups">
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <ul><li>Java</li><li>JavaScript</li><li>Python</li><li>SQL</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Frameworks &amp; platforms</h3>
+          <ul><li>Android SDK</li><li>Spring Boot</li><li>Firebase</li><li>REST APIs / JWT</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Data &amp; tools</h3>
+          <ul><li>MySQL</li><li>SQLite</li><li>OpenCV</li><li>Git &amp; GitHub</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="work wrap" id="work">
+      <h2>Selected work</h2>
+      <div class="filter-bar" id="filterBar">
+        <button class="filter-chip is-active" data-filter="all">All</button>
+        <button class="filter-chip" data-filter="android">Android</button>
+        <button class="filter-chip" data-filter="fullstack">Full stack</button>
+        <button class="filter-chip" data-filter="python">Python</button>
+      </div>
+
+      <div class="project-list" id="projectList">
+
+        <article class="project" data-tags="android fullstack">
+          <div class="project-mark" aria-hidden="true">DQ</div>
+          <div class="project-body">
+            <h3>Digital Queue Management &amp; Guest Handling System</h3>
+            <p class="project-tech">Android · Java · Firebase · Razorpay</p>
+            <p>Final-year project: a restaurant queue and table-management app with live guest handling and in-app UPI payments via Razorpay. Tracked down and fixed a real Android 11 payment-visibility bug caused by a missing package-query declaration.</p>
+            <div class="project-links">
+              <a href="https://github.com/NikitagajananKhandare28/queue-management-system" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" data-tags="android">
+          <div class="project-mark" aria-hidden="true">EX</div>
+          <div class="project-body">
+            <h3>Expense Tracker</h3>
+            <p class="project-tech">Android · Java · SQLite · MPAndroidChart</p>
+            <p>A personal finance app for logging and categorising daily expenses, with local SQLite storage and spending trends visualised through MPAndroidChart.</p>
+            <div class="project-links">
+              <a href="https://github.com/NikitagajananKhandare28/expense-tracker" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" data-tags="fullstack">
+          <div class="project-mark" aria-hidden="true">ERP</div>
+          <div class="project-body">
+            <h3>ERP Management System</h3>
+            <p class="project-tech">Spring Boot · MySQL · JWT</p>
+            <p>A role-based enterprise resource planning backend with secure authentication, built to practise production-style REST API design and relational data modelling.</p>
+            <div class="project-links">
+              <a href="https://github.com/NikitagajananKhandare28/erp-management-system" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" data-tags="python">
+          <div class="project-mark" aria-hidden="true">SA</div>
+          <div class="project-body">
+            <h3>Smart Attendance System</h3>
+            <p class="project-tech">Python · OpenCV (LBPH) · Tkinter · SQLite</p>
+            <p>Face-recognition attendance system built from scratch — LBPH recognition pipeline, a Tkinter desktop GUI, and SQLite storage. Won Best Mini Project at Tech Fest 2024.</p>
+            <div class="project-links">
+              <a href="https://github.com/NikitagajananKhandare28/smart-attendance-system" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+      <p class="filter-empty" id="filterEmpty" hidden>No projects in this category yet.</p>
+    </section>
+
+    <section class="contact wrap" id="contact">
+      <h2>Contact</h2>
+      <p>Best way to reach me is email — happy to talk about roles, or just about the payment bug in the queue system.</p>
+      <div class="contact-links">
+        <a href="mailto:your.email@example.com">your.email@example.com</a>
+        <a href="https://linkedin.com/in/nikitakhandare28" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/NikitagajananKhandare28" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer wrap">
+    <p>Built by hand with HTML, CSS &amp; JavaScript. © <span id="year"></span> Nikita Khandare.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
